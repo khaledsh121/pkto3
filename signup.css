@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+html , body{
+    height: 100vh;
+}
+
+
+.up{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.down{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background-image: url("img/login/right\ back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    z-index: 10;
+    position: relative;
+
+}
+    
+
+.right * {
+    text-align: center;
+    margin-top: 30px;
+}
+.right button {
+    width: 186px;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.right h1 {
+    font-weight: 500;
+    font-size: 47.12px;
+    line-height: 132.02%;
+    color: #FFFFFF;
+    direction: rtl;
+}
+
+.right p{
+    font-weight: 500;
+    font-size: 29.1px;
+    line-height: 123.02%;
+    color: rgba(255, 255, 255, 0.8);
+    width: 400px;
+}
+
+
+.left {
+    height: 500px;
+    width: 500px;
+    margin-right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.18);
+    border-radius: 25px;
+    }
+
+
+.left * {
+    margin-top: 5px;
+}
+
+.footer a {
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+
+.left h1 {
+    font-weight: 500;
+font-size: 25px;
+line-height: 155.52%;
+text-decoration-line: underline;
+color: #0D1721;
+}
+
+.email, .password{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(80, 10, 122, 0.15);
+    border-radius: 10px;
+    width: 372px;
+    height: 60px;
+    direction: rtl;
+    padding-right: 50px;
+    }
+
+    .forget{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        width: auto;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .submit{
+        width: 186px;
+        height: 60px;
+        background: #500A7A;
+        border-radius: 10px;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit img {
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      
+      .input-container input {
+        padding-right: 80px; /* Adjust this value to accommodate the image */
+      }
+      
+      .input-icon {
+        position: absolute;
+        top: 45%;
+        right: 10px; /* Adjust this value to position the image */
+        transform: translateY(-50%);
+        width: 40px; /* Adjust the width and height to match your image size */
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        border-left: 1.7px solid #0D1721;
+        padding-left: 10px;
+      }
+      
+      .email-icon {
+        background-image: url("img/login/Message.svg"); /* Replace with your image path for the email input */
+      }
+      
+      .password-icon {
+        background-image: url("img/login/Key.svg"); /* Replace with your image path for the password input */
+      }
+
+      .user-icon {
+        background-image: url("img/login/User.svg"); /* Replace with your image path for the password input */
+      }
+
+      .phone-icon {
+        background-image: url("img/login/mobile.svg"); /* Replace with your image path for the password input */
+      }
+
+      .sign{
+        display: none;
+      }
+
+      .agree{
+        color: #500A7A;
+        padding-right: 5px;
+        margin: 0;
+      }
+
+      @media only screen and (max-width: 967px){
+        .right{
+            display: none;
+        }
+        .left{
+            margin: 0;
+        }
+        .sign{
+            display: block;
+        }
+      }
+
+
+      @media only screen and (max-width: 508px) {
+        .left{
+            width: 280px;
+        }
+        .email , .password{
+            width: 180px;
+        }
+        .input-container input {
+            padding-right: 55px; /* Adjust this value to accommodate the image */
+            font-size: 11px;
+            height: 40px;
+          }
+          .forget , .forget *{
+            font-size: 11px;
+          }
+          .input-icon{
+            width: 20px;
+            height: 20px;
+          }
+      }
+      
